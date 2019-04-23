@@ -28,14 +28,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //setupFirebaseDataChange();
+      setupFirebaseDataChange();
         setupListView();
         setupAddButton();
         setupDetailButton();
         setupDeleteButton();
     }
 
-    /*
+
     private void setupFirebaseDataChange() {
         fishDataSource = new FishFirebaseData();
         myFishDbRef = fishDataSource.open();
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    */
+
 
     private void setupListView() {
         listViewFish = (ListView) findViewById(R.id.ListViewFish);
